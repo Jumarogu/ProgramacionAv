@@ -36,8 +36,6 @@ int main() {
     // d = max * max ---> overflow
     d = (long)max * max;
 
-
-
     printf(" p = %p, a = %d, b = %d, d = %ld \n", p, a, b, d);
     printf(" f = %f, c = %f, j = %d, array[1] = %d \n", f, c, j, array[1]); 
     return 0;
