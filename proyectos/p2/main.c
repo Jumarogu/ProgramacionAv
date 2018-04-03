@@ -10,7 +10,7 @@ int main() {
     bool visited[10] = {false};
     int testCases;
     int numberLenght;
-    int count = 0;
+    int count = 2;
     scanf("%d", &testCases);
 
     scanf("%c", &initialNumber);
@@ -28,7 +28,11 @@ int main() {
     }
 
     while(!completedArray(&visited)){
-
+        // En esta parte se convierte el numero inicial a entero sscanf
+        // se multiplica por el siguiente contador el inicial es 2, se aumenta el siguiente num
+        // se guardan los nuevos numero vistos
+        // se verifica si el arreglo est'a completo
+        // se imprime el ultimo valor 
     }
 
 }
