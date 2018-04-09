@@ -15,7 +15,7 @@ int main() {
     char *fileName = "input.txt";
     FILE *input;
     char *search = "mundo";
-    char *replace = "NUNDOTE";
+    char *replace = "MUNDOTE";
     char word[255];
     long searchPos = 0;
     int character;
@@ -35,6 +35,16 @@ int main() {
             while(ftell(input) != searchPos) {
                 character = fgetc(input);
                 fputc( character, stdout);
+            }
+            fputs(replace, stdout);
+            fseek(input, strlen(word), SEEK_CUR);
+            
+            while(1) {
+                character = fgetc(input);
+                if(feof(input)){
+                    break;
+                }
+                fputc(character, stdout);
             }
             break;
         }
